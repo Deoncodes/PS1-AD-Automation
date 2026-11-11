@@ -1,1 +1,16 @@
+@{
+    DomainDN  = 'DC=NMG,DC=com'
+    UpnSuffix = 'NMG.com'
 
+    Departments = @{
+        Finance    = @{ OU = 'OU=Finance,DC=NMG,DC=com';    Group = 'Finance' }
+        HR         = @{ OU = 'OU=HR,DC=NMG,DC=com';         Group = 'HR' }
+        IT         = @{ OU = 'OU=IT,DC=NMG,DC=com';         Group = 'IT' }
+        Operations = @{ OU = 'OU=Operations,DC=NMG,DC=com'; Group = 'Operations' }
+    }
+
+    Disabled = 'OU=Disabled Users,DC=NMG,DC=com'
+
+  
+    InactiveDays = 90
+}
